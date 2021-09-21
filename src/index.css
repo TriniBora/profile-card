@@ -1,0 +1,142 @@
+
+@font-face {
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: normal;
+    src: url(assets/fonts/Comfortaa-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Comfortaa;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsla(0, 0%, 20%, .5);
+    background-image: url(assets/img/abstract-digital-grid-black-background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+@media screen and (min-width: 641px) {
+    .card {
+        background-color: rgb(57, 62, 70);
+        padding: 1.4em;
+        width: 300px;
+        max-height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        text-align: center;
+        position: fixed;
+        top: 30vh;
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        background-color: rgb(57, 62, 70);
+        padding: 1.4em;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+}
+
+.title {
+    margin: 0.2em 0;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    padding-top: 1em;
+    color: rgb(78, 204, 163);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 120px;
+    height: auto;
+    box-shadow: 0px 0px 10px rgb(35, 41, 49);
+    margin: -50px auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+    padding: 1em 0.5em;
+    line-height: 135%;
+    color: rgb(200, 200, 200);
+}
+
+small:hover{
+    color:rgb(150, 150, 150);
+}
+
+.social-media {
+    display:flex;
+    justify-content: center;
+    margin-top: .8em;
+
+}
+
+.social-media-item{
+    list-style-type: none;
+    padding: 0em .3em .3em;
+}
+
+.social-media-item i{
+    color: rgb(78, 204, 163);
+    font-size: 2rem;
+
+}
+
+.social-media-item button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media-item i:hover {
+    color:rgb(255, 38, 38);
+    cursor: pointer;
+}
