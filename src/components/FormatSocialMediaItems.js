@@ -9,8 +9,7 @@ export default function FormatSocialMediaItems({ item}) {
     return (
       <li className="social-media-item">
         <button
-          onClick={handleClick}
-          key={ item.id }>
+          onClick={handleClick}>
           <i className={item.icon}></i>
         </button>
       </li>

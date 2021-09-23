@@ -5,7 +5,7 @@ export default function SocialMedia({ socialMediaItems }) {
     return (
       <ul className="social-media">
         {socialMediaItems.map((item) => (
-          <FormatSocialMediaItems item={item} />
+          <FormatSocialMediaItems key={ item.id } item={item} />
         ))}
       </ul>
     );
